@@ -39,10 +39,13 @@
   <div class="absolute inset-0 bg-black opacity-10"></div>
 
   <div class="absolute bottom-60 w-full pb-32">
-    <h2 class="lg:text-5xl mb-5 text-center text-3xl font-bold text-white sm:text-4xl font-sans">Welcome To 79</h2>
+    <h2 class="lg:text-5xl mb-5 text-center text-3xl font-bold text-white sm:text-4xl font-sans">Test,a</h2>
     <h3 class="lg:text-5xl mb-5 text-center text-3xl font-bold text-white sm:text-4xl font-sans">Talent Center 79</h3>
     <div class="flex justify-center mb-4">
-      <input class="shadow appearance-none border w-2/5 py-3 px-8 rounded-full text-gray-700 leading-tight focus:outline-none flex justify-center" id="title box" type="text" placeholder="Try 'Java Script'">
+      <input class="w-2/5 appearance-none rounded-l-full border px-8 py-3 leading-tight text-gray-700 shadow focus:outline-none" id="title box" type="text" placeholder="Try 'Java Script'" />
+      <div class="rounded-r-full border-none bg-white">
+        <img src="/img/cari1.png" alt="search" class="ml-1 w-10 mt-2" />
+      </div>
     </div>
     <div class="flex justify-center gap-2">
       <p class="py-2 px-4 rounded text-white">Popular</p>
@@ -130,3 +133,4 @@
             </div>
         </footer>
          <!--Footer End-->
+         <script src="/js/script.js"></script>
