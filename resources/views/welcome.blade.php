@@ -3,6 +3,31 @@
 <head>
     <title>Project</title>
     @vite('resources/css/app.css')
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Flip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Observer.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/EaselPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/PixiPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+
+
+<!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/EasePack.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CustomEase.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<style>
+      .txt {
+            display: none;
+        }
+        br {
+   display: block;
+   margin: 10px 0;
+}
+</style>
 </head>
 <body>
  <!--Header Start-->
@@ -17,10 +42,10 @@
           <nav id="nav-menu" class="absolute right-4 top-full hidden w-full rounded-lg py-5 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none">
             <ul class="block lg:flex">
               <li class="group">
-                <a href="" class="text-white group-hover:text-dark mx-8 flex py-2 text-base">Register</a>
+                <a href="" class="text-white group-hover:text-grey2 mx-8 flex py-2 text-base">Register</a>
               </li>
               <li class="group">
-                <a href="" class="text-white flex rounded-full bg-transparent px-8 py-2 text-base transition duration-300 ease-in-out hover:opacity-80  border border-white hover:border-dark hover:text-dark hover:bg-white">Sign In</a>
+                <a href="" class="text-white flex rounded-full bg-transparent px-8 py-2 text-base transition duration-300 ease-in-out hover:opacity-80  border border-white hover:border-black hover:text-black hover:bg-white">Sign In</a>
               </li>
             </ul>
           </nav>
@@ -36,36 +61,56 @@
     <img src="/img/annie-spratt-hCb3lIB8L8E-unsplash 1.png">
   </div>
 
-  <div class="absolute inset-0 bg-black opacity-10"></div>
+  <div class="absolute inset-0 bg-black opacity-50"></div>
+<div class="absolute bottom-60 w-full pb-32">
+<div class="bg-grey sm:max absolute bottom-20 w-full pb-32 lg:bg-transparent">
+  <h3 class="txt lg:text-5xl mb-10 text-center text-3xl font-bold text-white sm:text-4xl font-sans">Welcome to 79 <p class="mb-5">Talent Center</p></h3>
+  <h3 class="txt lg:text-5xl mb-10 text-center text-3xl font-bold text-white sm:text-4xl font-sans">Find a Talent <p class="mb-5">That Suits Your Requirements</p></h3>
+  <h3 class="txt lg:text-5xl mb-10 text-center text-3xl font-bold text-white sm:text-4xl font-sans">Build the Perfect Team <p class="mb-5"> For the Brighter Future</p></h3>
+  </div>
 
-  <div class="absolute bottom-60 w-full pb-32">
-    <h2 class="lg:text-5xl mb-5 text-center text-3xl font-bold text-white sm:text-4xl font-sans">Test,a</h2>
-    <h3 class="lg:text-5xl mb-5 text-center text-3xl font-bold text-white sm:text-4xl font-sans">Talent Center 79</h3>
-    <div class="flex justify-center mb-4">
-      <input class="w-2/5 appearance-none rounded-l-full border px-8 py-3 leading-tight text-gray-700 shadow focus:outline-none" id="title box" type="text" placeholder="Try 'Java Script'" />
-      <div class="rounded-r-full border-none bg-white">
-        <img src="/img/cari1.png" alt="search" class="ml-1 w-10 mt-2" />
-      </div>
-    </div>
-    <div class="flex justify-center gap-2">
-      <p class="py-2 px-4 rounded text-white">Popular</p>
-      <button class="bg-white hover:bg-gray-400 text-gray-800 py-2 px-4 rounded">
-        Java Script
-      </button>
-      <button class="bg-white hover:bg-gray-400 text-gray-800 py-2 px-4 rounded">
-        Scrum Master
-      </button>
-      <button class="bg-white hover:bg-gray-400 text-gray-800 py-2 px-4 rounded">
-        ReactJs
-      </button>
-      <button class="bg-white hover:bg-gray-400 text-gray-800 py-2 px-4 rounded">
-        Web Front-end Developer
-      </button>
-      <button class="bg-white hover:bg-gray-400 text-gray-800 py-2 px-4 rounded">
-        VueJs
-      </button>
+  <div class="flex justify-center mb-4">
+    <input type="text" class="w-1/2 appearance-none rounded-l-full border px-8 py-3 leading-tight text-gray-700 shadow focus:outline-none" id="title box" type="text" placeholder="Try 'Java Script'"/>
+    <div class="rounded-r-full border-none bg-white">
+      <img src="/img/cari1.png" alt="search" class="ml-1 w-10 mt-2" />
     </div>
   </div>
+  <div class="flex justify-center gap-2">
+    <p class="py-2 px-4 rounded text-white">Popular</p>
+    <button class="bg-white hover:bg-gray-400 text-gray-800 py-2 px-4 rounded">
+      Java Script
+    </button>
+    <button class="bg-white hover:bg-gray-400 text-gray-800 py-2 px-4 rounded">
+      Scrum Master
+    </button>
+    <button class="bg-white hover:bg-gray-400 text-gray-800 py-2 px-4 rounded">
+      ReactJs
+    </button>
+    <button class="bg-white hover:bg-gray-400 text-gray-800 py-2 px-4 rounded">
+      Web Front-end Developer
+    </button>
+    <button class="bg-white hover:bg-gray-400 text-gray-800 py-2 px-4 rounded">
+      VueJs
+    </button>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+      $(document).ready(function () {
+          var lines = $(".txt");
+          var i = -1;
+
+          function showNext() {
+              ++i;
+              lines.eq(i % lines.length)
+                  .fadeIn(200)
+                  .delay(3000)
+                  .fadeOut(200, showNext);
+          }
+
+          showNext();
+      });
+  </script>
 </section>
 <!---Hero section end--->
        <!--Footer Start-->
@@ -133,4 +178,3 @@
             </div>
         </footer>
          <!--Footer End-->
-         <script src="/js/script.js"></script>
