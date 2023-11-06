@@ -45,7 +45,7 @@
                 <a href="" class="text-white group-hover:text-grey2 mx-8 flex py-2 text-base">Register</a>
               </li>
               <li class="group">
-                <a href="" class="text-white flex rounded-full bg-transparent px-8 py-2 text-base transition duration-300 ease-in-out hover:opacity-80  border border-white hover:border-black hover:text-black hover:bg-white">Sign In</a>
+                <a href="#login" class="text-white flex rounded-full bg-transparent px-8 py-2 text-base transition duration-300 ease-in-out hover:opacity-80  border border-white hover:border-black hover:text-black hover:bg-white">Sign In</a>
               </li>
             </ul>
           </nav>
@@ -60,16 +60,14 @@
   <div class="bg-cover bg-center">
     <img src="/img/annie-spratt-hCb3lIB8L8E-unsplash 1.png">
   </div>
-
   <div class="absolute inset-0 bg-black opacity-50"></div>
 <div class="absolute bottom-60 w-full pb-32">
-<div class="bg-grey sm:max absolute bottom-20 w-full pb-32 lg:bg-transparent">
-  <h3 class="txt lg:text-5xl mb-10 text-center text-3xl font-bold text-white sm:text-4xl font-sans">Welcome to 79 <p class="mb-5">Talent Center</p></h3>
-  <h3 class="txt lg:text-5xl mb-10 text-center text-3xl font-bold text-white sm:text-4xl font-sans">Find a Talent <p class="mb-5">That Suits Your Requirements</p></h3>
-  <h3 class="txt lg:text-5xl mb-10 text-center text-3xl font-bold text-white sm:text-4xl font-sans">Build the Perfect Team <p class="mb-5"> For the Brighter Future</p></h3>
-  </div>
+  <div class="sm:max absolute bottom-20 w-full pb-17 lg:bg-transparent mb-10">
+    <h3 class="txt mb-10 text-center font-sans text-3xl font-bold text-white sm:text-4xl lg:text-5xl">Welcome to 79 <br class="mb-5">Talent Center</h3>
+    <h3 class="txt mb-10 text-center font-sans text-3xl font-bold text-white sm:text-4xl lg:text-5xl">Find a Talent <br class="mb-5" />That Suits Your Requirements</h3>
+    <h3 class="txt mb-10 text-center font-sans text-3xl font-bold text-white sm:text-4xl lg:text-5xl">Build the Perfect Team <br class="mb-5" />For the Brighter Future</h3>
 
-  <div class="flex justify-center mb-4">
+  <div class="flex justify-center mb-3">
     <input type="text" class="w-1/2 appearance-none rounded-l-full border px-8 py-3 leading-tight text-gray-700 shadow focus:outline-none" id="title box" type="text" placeholder="Try 'Java Script'"/>
     <div class="rounded-r-full border-none bg-white">
       <img src="/img/cari1.png" alt="search" class="ml-1 w-10 mt-2" />
@@ -93,6 +91,7 @@
       VueJs
     </button>
   </div>
+</div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
