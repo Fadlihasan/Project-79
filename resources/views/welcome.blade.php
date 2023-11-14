@@ -127,9 +127,9 @@
 
   <div class="flex justify-center mb-3">
     <input type="text" class="w-1/2 appearance-none rounded-l-full border px-8 py-3 leading-tight text-gray-700 shadow focus:outline-none" id="title box" type="text" placeholder="Try 'Java Script'"/>
-    <div class="rounded-r-full border-none bg-white">
-      <img src="/img/cari1.png" alt="search" class="ml-1 w-10 mt-2" />
-    </div>
+    <button class="rounded-r-full border-none bg-white">
+      <img src="/img/cari1.png" alt="search" class="ml-1 mr-3 w-10 mt-3 mb-3" />
+    </button>
   </div>
   <div class="flex justify-center gap-2">
     <p class="py-2 px-4 rounded text-white">Popular</p>
