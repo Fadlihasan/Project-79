@@ -20,6 +20,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CustomEase.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 <style>
+  .popup {
+    transition: all 5s ease-in-out;
+    position: relative;
+} 
+
+
+
+
       .txt {
             display: none;
         }
@@ -45,7 +53,7 @@
                 <a href="" class="text-white group-hover:text-grey2 mx-8 flex py-2 text-base">Register</a>
               </li>
               <li class="group">
-                <a href="#login" class="text-white flex rounded-full bg-transparent px-8 py-2 text-base transition duration-300 ease-in-out hover:opacity-80  border border-white hover:border-black hover:text-black hover:bg-white">Sign In</a>
+                <button class="button text-white flex rounded-full bg-transparent px-8 py-2 text-base transition duration-300 ease-in-out hover:opacity-80  border border-white hover:border-black hover:text-black hover:bg-white" onclick= "my_modal_1.showModal()">Sign In</button>
               </li>
             </ul>
           </nav>
@@ -53,15 +61,65 @@
       </div>
     </div>
   </header>
-   <!--Header End-->
+   <!--Header End--
 
-<!---Hero section start--->
+<-Hero section start--->
 <section id="home" class="relative sm:max">
   <div class="bg-cover bg-center">
     <img src="/img/annie-spratt-hCb3lIB8L8E-unsplash 1.png">
   </div>
   <div class="absolute inset-0 bg-black opacity-50"></div>
 <div class="absolute bottom-60 w-full pb-32">
+  <dialog id="my_modal_1" class="modal rounded-lg z-50">
+    <div class="modal-box">
+      <!-- login container -->
+      <form method="dialog">
+        <div class="flex justify-center bg-white p-5">
+          <div class="relative">
+            <button class="popup-close absolute right-2.5 top-3 ml-auto inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900">
+              <svg aria-hidden="true" class="h-5 w-5" fill="#000000" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" cliprule="evenodd"></path>
+              </svg>
+              <span class="sr-only">Close popup</span>
+            </button>
+            <!-- form -->
+            <div class="p-9">
+              <h2 class="text-center text-2xl font-bold text-black">Welcome Back</h2>
+              <p class="text-gray-400 mt-4 text-xs">Please sign in first to explore futher on our website</p>
+              <input class="w-full mt-5 rounded-xl border p-2 mb-3" type="email" name="email" placeholder="Email" />
+               <div class="relative">
+              <input class="w-full rounded-xl border p-2" type="password" name="password" placeholder="Password" />
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray" class="bi bi-eye absolute right-3 top-1/2 -translate-y-1/2" viewBox="0 0 16 16">
+                <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+              </svg>
+            </div>
+
+            <button class="w-full rounded-xl bg-blue3 py-2 mt-4 text-white">Login</button>
+  
+              <div class="mt-6 w-full grid-cols-3 items-center text-gray-400">
+                <hr class="border-gray-400" />
+                <hr class="border-gray-400" />
+              </div>
+  
+              <button class="mt-5 flex w-full items-center justify-center rounded-xl border-2 bg-white py-2 text-sm text-[#002D74]">
+                <svg class="mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="25px">
+                  <path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z" />
+                  <path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z" />
+                  <path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z" />
+                  <path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z" />
+                </svg>
+                Login with Google
+              </button>
+              <div class="mt-3 flex items-center justify-center text-xs">
+                <p>Don't have an Account? <a href="" class="text-blue text-right">Register Here</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </dialog>
   <div class="sm:max absolute bottom-20 w-full pb-17 lg:bg-transparent mb-10">
     <h3 class="txt mb-10 text-center font-sans text-3xl font-bold text-white sm:text-4xl lg:text-5xl">Welcome to 79 <br class="mb-5">Talent Center</h3>
     <h3 class="txt mb-10 text-center font-sans text-3xl font-bold text-white sm:text-4xl lg:text-5xl">Find a Talent <br class="mb-5" />That Suits Your Requirements</h3>
@@ -75,20 +133,20 @@
   </div>
   <div class="flex justify-center gap-2">
     <p class="py-2 px-4 rounded text-white">Popular</p>
-    <button class="bg-white hover:bg-gray-400 text-gray-800 py-2 px-4 rounded">
-      Java Script
-    </button>
-    <button class="bg-white hover:bg-gray-400 text-gray-800 py-2 px-4 rounded">
-      Scrum Master
-    </button>
-    <button class="bg-white hover:bg-gray-400 text-gray-800 py-2 px-4 rounded">
+    <button class="bg-white hover:bg-gray-400 text-gray-800 py-2 px-8 rounded">
       ReactJs
     </button>
-    <button class="bg-white hover:bg-gray-400 text-gray-800 py-2 px-4 rounded">
-      Web Front-end Developer
+    <button class="bg-white hover:bg-gray-400 text-gray-800 py-2 px-8 rounded">
+      Java
     </button>
     <button class="bg-white hover:bg-gray-400 text-gray-800 py-2 px-4 rounded">
-      VueJs
+      Spring Boot
+    </button>
+    <button class="bg-white hover:bg-gray-400 text-gray-800 py-2 px-8 rounded">
+      C + +
+    </button>
+    <button class="bg-white hover:bg-gray-400 text-gray-800 py-2 px-8 rounded">
+      Katalon
     </button>
   </div>
 </div>

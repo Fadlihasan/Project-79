@@ -12,11 +12,13 @@ module.exports = {
     },
     extend: {
       colors :{
-        dark: '#0f172a',
-        grey: '#d3d3d3',
+        dark  : '#0f172a',
+        grey  : '#d3d3d3',
         grey2 : '#a9a9a9',
-        blue: '#142b51',
+        grey3 : '#848484',
+        blue  : '#142b51',
         blue2 : '#081e43',
+        blue3 : '#2C8AD3',
       },
       screens: {
         '2xl': '1320px',
