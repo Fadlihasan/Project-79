@@ -126,12 +126,14 @@
     <h3 class="txt mb-10 text-center font-sans text-3xl font-bold text-white sm:text-4xl lg:text-5xl">Build the Perfect Team <br class="mb-5" />For the Brighter Future</h3>
 
   <div class="flex justify-center mb-3">
-    <form id="updateForm" action="" method="POST"class="w-1/2 appearance-none rounded-l-full border px-8 py-2 leading-tight text-gray-700 shadow focus:outline-none bg-white">
-      <input class="w-full rounded-xl border-none p-2 focus:outline-none focus-visible:outline-none" id="search-bar" type="text" id="title box" type="text" placeholder="Try 'ReactJS'"/>
-     </form>
-    <button class="rounded-r-full border-none bg-white" type="submit">
-      <img src="/img/cari1.png" alt="search" class="ml-1 mr-3 w-10 mt-3 mb-3" />
-    </button>
+    <form id="updateForm" action="" method="POST"class="w-1/2 appearance-none rounded-full border px-8 leading-tight text-gray-700 shadow focus:outline-none bg-white">
+      <input class="w-3/4 py-3 focus:outline-none focus-visible:outline-none" id="search-bar" type="text" id="title box" type="text" placeholder="Try 'ReactJS'"/>
+      <button class=" border-none float-right" type="submit">  <div class="grid place-items-center h-full w-12 text-grey3 p-3">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+    </div></button> 
+    </form>
   </div>
 
   <div class="flex justify-center gap-2">
