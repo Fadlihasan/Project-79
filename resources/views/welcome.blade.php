@@ -126,11 +126,14 @@
     <h3 class="txt mb-10 text-center font-sans text-3xl font-bold text-white sm:text-4xl lg:text-5xl">Build the Perfect Team <br class="mb-5" />For the Brighter Future</h3>
 
   <div class="flex justify-center mb-3">
-    <input type="text" class="w-1/2 appearance-none rounded-l-full border px-8 py-3 leading-tight text-gray-700 shadow focus:outline-none" id="title box" type="text" placeholder="Try 'Java Script'"/>
-    <button class="rounded-r-full border-none bg-white">
+    <form id="updateForm" action="" method="POST"class="w-1/2 appearance-none rounded-l-full border px-8 py-2 leading-tight text-gray-700 shadow focus:outline-none bg-white">
+      <input class="w-full rounded-xl border-none p-2 focus:outline-none focus-visible:outline-none" id="search-bar" type="text" id="title box" type="text" placeholder="Try 'ReactJS'"/>
+     </form>
+    <button class="rounded-r-full border-none bg-white" type="submit">
       <img src="/img/cari1.png" alt="search" class="ml-1 mr-3 w-10 mt-3 mb-3" />
     </button>
   </div>
+
   <div class="flex justify-center gap-2">
     <p class="py-2 px-4 rounded text-white">Popular</p>
     <button class="bg-white hover:bg-gray-400 text-gray-800 py-2 px-8 rounded">
