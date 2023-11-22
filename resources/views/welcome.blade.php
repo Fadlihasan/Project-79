@@ -54,7 +54,7 @@
       </div>
     </div>
   </header>
-   <!--Header End--
+   <!--Header End-->
 
 <-Hero section start--->
 <section id="home" class="relative sm:max">
